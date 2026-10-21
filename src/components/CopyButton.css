@@ -1,0 +1,67 @@
+.copy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  transition: color 0.15s, background 0.15s, border-color 0.15s;
+}
+
+.copy-btn:hover:not(:disabled) {
+  color: #fff;
+  border-color: var(--border-strong);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.copy-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.copy-btn-sm {
+  padding: 0.4rem 0.65rem;
+  font-size: 0.78rem;
+}
+
+.copy-btn-md {
+  padding: 0.55rem 0.85rem;
+  font-size: 0.86rem;
+}
+
+.copy-btn-icon {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  gap: 0;
+}
+
+.copy-btn-icon span {
+  display: none;
+}
+
+.copy-btn-primary {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+.copy-btn-primary:hover:not(:disabled) {
+  background: #e4e4e7;
+  color: #000;
+  border-color: #e4e4e7;
+}
+
+.copy-btn-ghost {
+  background: transparent;
+}
+
+.copy-btn.is-copied {
+  color: #4ade80;
+  border-color: rgba(74, 222, 128, 0.4);
+}

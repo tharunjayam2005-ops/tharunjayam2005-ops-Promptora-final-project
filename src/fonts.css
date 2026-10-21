@@ -1,0 +1,69 @@
+/* Roobert — place .woff2 files in /public/fonts/
+   Expected files:
+   - Roobert-Regular.woff2
+   - Roobert-Medium.woff2
+   - Roobert-SemiBold.woff2
+   - Roobert-Bold.woff2
+*/
+
+@font-face {
+  font-family: Roobert;
+  src:
+    local("Roobert"),
+    local("Roobert Regular"),
+    url("/fonts/Roobert-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roobert;
+  src:
+    local("Roobert Medium"),
+    url("/fonts/Roobert-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roobert;
+  src:
+    local("Roobert SemiBold"),
+    local("Roobert Semibold"),
+    url("/fonts/Roobert-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roobert;
+  src:
+    local("Roobert Bold"),
+    url("/fonts/Roobert-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roobert;
+  src:
+    local("Roobert Bold"),
+    url("/fonts/Roobert-Bold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Metric-matched fallback while Roobert woff2 loads */
+@font-face {
+  font-family: "Roobert Fallback";
+  src: local("Segoe UI"), local("Helvetica Neue"), local("Arial");
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+  size-adjust: 105%;
+}

@@ -1,0 +1,75 @@
+.usage-chart {
+  border: 1px solid var(--border);
+  background: #0a0a0a;
+  padding: 1rem;
+  min-width: 0;
+}
+
+.usage-chart-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.usage-chart-head h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1rem;
+}
+
+.usage-chart-head span {
+  color: var(--text-dim);
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+}
+
+.usage-chart-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.usage-grid {
+  stroke: rgba(255, 255, 255, 0.08);
+  stroke-width: 1;
+}
+
+.usage-axis {
+  fill: #71717a;
+  font-size: 10px;
+  font-family: var(--font-mono);
+}
+
+.usage-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.usage-breakdown-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.usage-breakdown-meta span {
+  font-family: var(--font-mono);
+  color: var(--text-dim);
+}
+
+.usage-breakdown-track {
+  height: 8px;
+  background: #111;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.usage-breakdown-fill {
+  height: 100%;
+  min-width: 0;
+  transition: width 0.25s ease;
+}

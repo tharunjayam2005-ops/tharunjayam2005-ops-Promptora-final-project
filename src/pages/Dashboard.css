@@ -1,0 +1,243 @@
+.dash-hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  background:
+    radial-gradient(circle at 0% 0%, rgba(124, 58, 237, 0.18), transparent 45%),
+    #0a0a0a;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.dash-identity {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dash-avatar {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border: 1px solid var(--border-strong);
+  background: #111;
+}
+
+.dash-avatar-fallback {
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #7c3aed, #2dd4bf);
+}
+
+.dash-identity h2 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+}
+
+.dash-identity p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.dash-hero-actions {
+  display: flex;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.dash-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  margin-bottom: 1.25rem;
+}
+
+.dash-stat {
+  background: #000;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.dash-stat strong {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+}
+
+.dash-stat span {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
+.dash-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+
+.dash-card {
+  background: #0a0a0a;
+  padding: 1.5rem;
+}
+
+.dash-card h3 {
+  font-family: var(--font-display);
+  margin-bottom: 1rem;
+}
+
+.dash-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.dash-empty {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.dash-recent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.dash-recent li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.dash-recent strong {
+  font-size: 0.95rem;
+}
+
+.dash-recent span {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+.dash-usage-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.85rem;
+}
+
+.dash-range {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.dash-range button {
+  border: 1px solid var(--border);
+  background: #000;
+  color: var(--text-muted);
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+
+.dash-range button.active {
+  color: #fff;
+  border-color: rgba(167, 139, 250, 0.45);
+  background: rgba(167, 139, 250, 0.14);
+}
+
+.dash-export {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.dash-graphs {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 800px) {
+  .dash-stats,
+  .dash-grid,
+  .dash-graphs {
+    grid-template-columns: 1fr;
+  }
+
+  .dash-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dash-hero-actions {
+    width: 100%;
+  }
+
+  .dash-hero-actions .btn {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .dash-usage-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .dash-range {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .dash-export {
+    width: 100%;
+  }
+
+  .dash-export .btn {
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .dash-card {
+    padding: 1.15rem;
+  }
+
+  .dash-hero-actions {
+    flex-direction: column;
+  }
+
+  .dash-actions {
+    flex-direction: column;
+  }
+
+  .dash-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .dash-recent li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
