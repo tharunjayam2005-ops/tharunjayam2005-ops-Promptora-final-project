@@ -17,6 +17,7 @@ It supports multiple AI models, reusable skills, prompt templates, user profiles
 * Web Application Live Link : "https://tharunjayam2005-ops-promptora-final.vercel.app/overview"
 
 ##Provide Mind Map:
+
 *Mind Map :"https://notebook.google.com/notebook/d23ee574-4686-4820-b30b-e2fce6de1628/artifact/60101fa4-1a0a-412a-bf9c-45bb900e45fd?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_"
 
 ---
